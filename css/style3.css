@@ -1,0 +1,363 @@
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BLUE SHAPE */
+.hero-shape {
+    position: absolute;
+    top: -340px;
+    left: -200px;
+    width: 70vw;
+    height: 150vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* HERO TEXT */
+.hero-text {
+    padding-left: 60px;
+}
+
+.hero-text h1 {
+    font-size: 2.2rem;
+}
+
+.hero-students {
+    width: 100%;
+    margin-right: -200px;
+}
+
+.navbar-custom {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 9999;
+}
+
+/* NAV TEXT DEFAULT */
+.nav-custom .nav-link {
+    color: #828893 !important;
+    transform: translateX(35px);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* hilangkan icon panah */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* custom dropdown box */
+.custom-dropdown {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  min-width: 180px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* item dropdown */
+.custom-dropdown .dropdown-item {
+  padding: 12px 24px;
+  font-size: 15px;
+  color: #6b7280; /* abu-abu soft */
+  transition: all 0.25s ease;
+}
+
+/* hover item */
+.custom-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #111827;
+}
+
+.logo-custom .nav-link {
+    color: #3498DB;
+}
+
+.navbar-custom.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.navbar-custom.scrolled .logo-custom .nav-link {
+    color: #3498DB;
+}
+
+.hero-profil {
+  position: relative;
+  min-height: 70vh;
+
+  /* background image */
+  background-image: url("../asset/sekolah.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* overlay gelap */
+.hero-profil::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* tingkat kegelapan */
+  z-index: 1;
+}
+
+/* isi hero di atas overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-content a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.hero-content a:hover {
+  text-decoration: underline;
+}
+
+.contact-section {
+  padding: 80px 0;
+  background: #fff5f5;
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+}
+
+.contact-info {
+  flex: 1;
+  background: #3498DB;
+  color: white;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 25px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.contact-list i {
+  font-size: 18px;
+}
+
+/* RIGHT FORM */
+.contact-form {
+  flex: 1.2;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.school-name {
+  color: #3498DB;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #3498DB;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  margin-top: 25px;
+  width: 120px;
+  padding: 10px;
+  background: #3498DB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu.show {
+    display: block !important;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 70px 0 0;
+}
+
+.footer-brand img {
+  width: 70px;
+}
+
+.footer-brand h5 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* TITLE */
+.footer-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* MENU */
+.footer-menu,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li,
+.footer-contact li {
+  margin-bottom: 10px;
+  color: #cbd5f5;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #cbd5f5;
+}
+
+.footer-menu li a:hover {
+  color: #ffffff;
+}
+
+/* CONTACT */
+.footer-contact i {
+  margin-right: 10px;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  height: 12px;
+  background-color: #8fd3ff;
+  margin-top: 40px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .profil-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-info {
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .contact-form {
+    padding: 0;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}

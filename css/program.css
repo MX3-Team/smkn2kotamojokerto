@@ -1,0 +1,601 @@
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* HERO TEXT */
+.hero-text {
+    padding-left: 60px;
+}
+
+.hero-text h1 {
+    font-size: 2.2rem;
+}
+
+.hero-students {
+    width: 100%;
+    margin-right: -200px;
+}
+
+.navbar-custom {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 9999;
+}
+
+/* NAV TEXT DEFAULT */
+.nav-custom .nav-link {
+    color: #828893 !important;
+    transform: translateX(35px);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* hilangkan icon panah */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* custom dropdown box */
+.custom-dropdown {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  min-width: 180px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* item dropdown */
+.custom-dropdown .dropdown-item {
+  padding: 12px 24px;
+  font-size: 15px;
+  color: #6b7280; /* abu-abu soft */
+  transition: all 0.25s ease;
+}
+
+/* hover item */
+.custom-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #111827;
+}
+
+.logo-custom .nav-link {
+    color: #3498DB;
+}
+
+.navbar-custom.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.navbar-custom.scrolled .logo-custom .nav-link {
+    color: #3498DB;
+}
+
+.hero-profil {
+  position: relative;
+  min-height: 70vh;
+
+  /* background image */
+  background-image: url("../asset/sekolah.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* overlay gelap */
+.hero-profil::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* tingkat kegelapan */
+  z-index: 1;
+}
+
+/* isi hero di atas overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-content a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.hero-content a:hover {
+  text-decoration: underline;
+}
+/* SECTION SIJA */
+.sija {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+.sija-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+/* IMAGE */
+.sija-image {
+  width: 45%;
+}
+
+.sija-image img {
+  width: 100%;
+}
+
+/* CONTENT */
+.sija-content {
+  width: 55%;
+}
+
+.sija-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  
+  color: #1e40af; /* biru */
+
+}
+
+.sija-content h2 span {
+  color:#facc15;
+}
+
+.sija-content p {
+  color: #555;
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.sija-content strong {
+  display: block;
+  margin: 20px 0 15px;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sija-container {
+    flex-direction: column;
+  }
+
+  .sija-image,
+  .sija-content {
+    width: 100%;
+  }
+
+  .sija-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* SECTION TJAT */
+.tjat {
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+.tjat-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* TEKS */
+.tjat-content {
+  width: 55%;
+}
+
+.tjat-content h2 {
+  font-size: 32px;
+
+  color: #1e40af; /* biru */
+  margin-bottom: 20px;
+}
+
+.tjat-content h2 span {
+ 
+  color: #facc15; /* kuning */
+}
+
+
+
+.tjat-content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+/* GAMBAR */
+.tjat-image {
+  width: 45%;
+  text-align: right;
+}
+
+.tjat-image img {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .tjat-container {
+    flex-direction: column;
+  }
+
+  .tjat-content,
+  .tjat-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tjat-content h2 {
+    font-size: 28px;
+  }
+}
+
+/* ===============================
+   CONTENT PAGE (EKSTRAKURIKULER)
+================================ */
+
+.content-page {
+  padding: 80px 12%;
+  background-color: #ffffff;
+}
+
+.content-container {
+  max-width: 1100px;
+}
+
+.content-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1e40af; /* biru */
+}
+
+.content-subtitle {
+  color: #facc15;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.content-text p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .content-page {
+    padding: 50px 6%;
+  }
+
+  .content-title {
+    font-size: 32px;
+  }
+}
+
+/* ===============================
+   HORIZONTAL CARD + DOTS
+================================ */
+
+.card-wrapper {
+  position: relative;
+}
+
+.horizontal-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+
+  scroll-behavior: auto; /* WAJIB */
+  -webkit-overflow-scrolling: touch;
+
+  cursor: grab;
+}
+
+.horizontal-scroll:active {
+  cursor: grabbing;
+}
+
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #1e40af;
+  border-radius: 10px;
+}
+
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* CARD */
+.scroll-card {
+  flex: 0 0 300px;   /* PAKSA LEBAR */
+  min-width: 300px;
+
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+/* IMAGE 4:3 */
+.card-image {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TITLE */
+.scroll-card h4 {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* DOT INDICATOR */
+.scroll-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.scroll-dots span {
+  width: 10px;
+  height: 10px;
+  background: #cbd5e1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scroll-dots span.active {
+  background: #1e40af; /* biru */
+}
+
+/* ===============================
+   FORCE HORIZONTAL SCROLL (FINAL)
+   JANGAN DIUBAH
+================================ */
+
+.horizontal-section {
+  overflow: visible !important;
+}
+
+.card-wrapper {
+  overflow: visible !important;
+}
+
+/* AREA SCROLL */
+.horizontal-scroll {
+  display: flex;
+  gap: 24px;
+  cursor: grab;
+  user-select: none;
+  will-change: transform;
+}
+
+.horizontal-scroll:active {
+  cursor: grabbing;
+}
+
+
+/* PAKSA CARD LEBAR */
+.scroll-card {
+  flex: 0 0 300px !important;
+  min-width: 300px !important;
+}
+
+/* PASTIKAN TIDAK ADA YANG NGUNCI */
+.container,
+.row,
+section {
+  overflow-x: visible !important;
+}
+
+
+.horizontal-scroll {
+  cursor: grab;
+}
+
+.horizontal-scroll.active {
+  cursor: grabbing;
+}
+
+.loop-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.navbar-custom {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 9999;
+}
+
+/* NAV TEXT DEFAULT */
+.nav-custom .nav-link {
+    color: #828893 !important;
+    transform: translateX(35px);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* hilangkan icon panah */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* custom dropdown box */
+.custom-dropdown {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  min-width: 180px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* item dropdown */
+.custom-dropdown .dropdown-item {
+  padding: 12px 24px;
+  font-size: 15px;
+  color: #6b7280; /* abu-abu soft */
+  transition: all 0.25s ease;
+}
+
+/* hover item */
+.custom-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #111827;
+}
+
+.logo-custom .nav-link {
+    color: #3498DB;
+}
+
+.navbar-custom.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.navbar-custom.scrolled .logo-custom .nav-link {
+    color: #3498DB;
+}
+
+/* HOVER */
+.nav-link:hover {
+    opacity: 0.75;
+}
+
+/* WHY MOKLET */
+.why-skaneda {
+  padding: 10px 0;
+  background: #fff;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 70px 0 0;
+}
+
+.footer-brand img {
+  width: 70px;
+}
+
+.footer-brand h5 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* TITLE */
+.footer-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* MENU */
+.footer-menu,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li,
+.footer-contact li {
+  margin-bottom: 10px;
+  color: #cbd5f5;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #cbd5f5;
+}
+
+.footer-menu li a:hover {
+  color: #ffffff;
+}
+
+/* CONTACT */
+.footer-contact i {
+  margin-right: 10px;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  height: 12px;
+  background-color: #8fd3ff;
+  margin-top: 40px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

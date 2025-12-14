@@ -1,0 +1,319 @@
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BLUE SHAPE */
+.hero-shape {
+    position: absolute;
+    top: -340px;
+    left: -200px;
+    width: 70vw;
+    height: 150vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* HERO TEXT */
+.hero-text {
+    padding-left: 60px;
+}
+
+.hero-text h1 {
+    font-size: 2.2rem;
+}
+
+.hero-students {
+    width: 100%;
+    margin-right: -200px;
+}
+
+.navbar-custom {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 9999;
+}
+
+/* NAV TEXT DEFAULT */
+.nav-custom .nav-link {
+    color: #828893 !important;
+    transform: translateX(35px);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* hilangkan icon panah */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* custom dropdown box */
+.custom-dropdown {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  min-width: 180px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* item dropdown */
+.custom-dropdown .dropdown-item {
+  padding: 12px 24px;
+  font-size: 15px;
+  color: #6b7280; /* abu-abu soft */
+  transition: all 0.25s ease;
+}
+
+/* hover item */
+.custom-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #111827;
+}
+
+.logo-custom .nav-link {
+    color: #3498DB;
+}
+
+.navbar-custom.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.navbar-custom.scrolled .logo-custom .nav-link {
+    color: #3498DB;
+}
+
+.hero-profil {
+  position: relative;
+  min-height: 70vh;
+
+  /* background image */
+  background-image: url("../asset/sekolah.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* overlay gelap */
+.hero-profil::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* tingkat kegelapan */
+  z-index: 1;
+}
+
+/* isi hero di atas overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-content a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.hero-content a:hover {
+  text-decoration: underline;
+}
+
+.profil-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f2a44;
+}
+
+/* share */
+.profil-share span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.share-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e14b4b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.share-icon:hover {
+  opacity: 0.85;
+}
+
+/* content text */
+.profil-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+/* image */
+.profil-img {
+  max-height: 80px;
+}
+
+.profil-img.iso {
+  max-height: 60px;
+}
+
+.profil-list {
+  padding-left: 20px;
+}
+
+.profil-list li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+/* foto utama */
+.fasilitas-main img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* card gallery */
+.fasilitas-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 200px; /* PENTING biar seragam */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* gambar */
+.fasilitas-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* bikin gambar proporsional */
+  transition: transform 0.5s ease;
+}
+
+/* zoom effect */
+.fasilitas-card:hover img {
+  transform: scale(1.15);
+}
+
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 70px 0 0;
+}
+
+.footer-brand img {
+  width: 70px;
+}
+
+.footer-brand h5 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* TITLE */
+.footer-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* MENU */
+.footer-menu,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li,
+.footer-contact li {
+  margin-bottom: 10px;
+  color: #cbd5f5;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #cbd5f5;
+}
+
+.footer-menu li a:hover {
+  color: #ffffff;
+}
+
+/* CONTACT */
+.footer-contact i {
+  margin-right: 10px;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  height: 12px;
+  background-color: #8fd3ff;
+  margin-top: 40px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .profil-title {
+    font-size: 24px;
+  }
+}

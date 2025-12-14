@@ -1,0 +1,104 @@
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BLUE SHAPE */
+.hero-shape {
+    position: absolute;
+    top: -340px;       /* dorong sedikit ke atas biar over-screen */
+    left: -200px;      /* dorong sedikit ke kiri */
+    width: 70vw;      /* biar ngelebar kaya figma */
+    height: 150vh;    /* lebih tinggi biar pasti nutup kiri */
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* TEXT */
+.hero-text {
+    margin-top: 10px;
+    padding-left: 60px;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+
+.hero-students {
+    width: 75%;
+    margin-top: 70px;
+}
+
+.navbar-custom {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 9999;
+}
+
+/* NAV TEXT DEFAULT */
+.nav-custom .nav-link {
+    color: #828893 !important;
+    transform: translateX(35px);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* hilangkan icon panah */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* custom dropdown box */
+.custom-dropdown {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  min-width: 180px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* item dropdown */
+.custom-dropdown .dropdown-item {
+  padding: 12px 24px;
+  font-size: 15px;
+  color: #6b7280; /* abu-abu soft */
+  transition: all 0.25s ease;
+}
+
+/* hover item */
+.custom-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #111827;
+}
+
+.logo-custom .nav-link {
+    color: #3498DB;
+}
+
+.navbar-custom.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.navbar-custom.scrolled .logo-custom .nav-link {
+    color: #3498DB;
+}
+
+.btn_join {
+    color: #3498DB !important;
+}
