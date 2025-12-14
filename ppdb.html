@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran PPDB</title>
+
+  <!-- Bootstrap & Icon -->
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/ppdb.css">
+</head>
+
+<body>
+  <!-- Signup Section -->
+  <section class="signup-section">
+    <div class="container-box">
+
+      <!-- Kiri - Form Registrasi -->
+      <div class="signup-left">
+        <h2>Daftar PPDB</h2>
+
+        <div class="image">
+            <a href="index.html"><img src="asset/logo.webp" alt="Logo Sekolah"></a>
+        </div>
+
+        <form id="registerForm">
+          <label>Masukkan Nama <span class="abuabu">*Gunakan nama asli</span></label>
+          <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" required>
+
+          <label>Masukkan Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Masukkan Email" required>
+
+          <label>Masukkan No.Telp</label>
+          <input type="tel" class="form-control" id="telepon" placeholder="Masukkan No Telepon" required>
+
+          <label>Masukkan Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Masukkan Password" required>
+
+          <label>Konfirmasi Ulang Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Konfirmasi Ulang Password" required>
+
+          <label>Tanggal Lahir</label>
+          <input type="date" class="form-control" id="tanggalLahir" required>
+
+          <label>Alamat</label>
+          <input type="text" class="alamat" id="alamat" placeholder="Masukkan Alamat Lengkap" required>
+
+          <label>Asal Sekolah</label>
+          <input type="text" class="form-control" id="asalSekolah" placeholder="Asal Sekolah" required>
+
+          <label>NISN</label>
+          <input type="text" class="form-control" id="nisn" placeholder="Nomor Induk Siswa Nasional" required>
+
+          <label>Nama Orang Tua/Wali</label>
+          <input type="text" class="form-control" id="namaOrtu" placeholder="Nama Lengkap Orang Tua" required>
+
+          <button type="submit" class="btn btn-signin mt-3">Daftar Sekarang</button>
+        </form>
+      </div>
+
+      <!-- Kanan -->
+      <div class="signup-right">
+        <div class="image">
+            <img src="asset/sekolah.webp" alt="Gambar Sekolah">
+        </div>
+        <h2>Selamat Datang di PPDB</h2>
+        <p>Bergabunglah dengan sekolah kami untuk pendidikan terbaik demi masa depan yang gemilang</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="storage.js"></script>
+  <script src="ppdb.js"></script>
+</body>
+</html>
